@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ranking de Jogadores</h1>
+        <table id="rankingTable">
+            <!-- Exemplo de estrutura -->
+            <tr style="background-color: gold;">
+                <td>1. Jogador1</td>
+                <td>XP: 5000</td>
+            </tr>
+            <tr style="background-color: silver;">
+                <td>2. Jogador2</td>
+                <td>XP: 4000</td>
+            </tr>
+            <tr style="background-color: #cd7f32;">
+                <td>3. Jogador3</td>
+                <td>XP: 3000</td>
+            </tr>
+            <!-- Outros jogadores -->
+        </table>
+
+        <!-- Barra inferior com botões -->
+<div class="bottom-bar">
+    <button class="nav-button" id="homeButton" onclick="window.location.href='index.html'">Home</button>
+    <button class="nav-button" id="upgradeButton" onclick="window.location.href='upgrade.html'">Upgrades</button>
+    <button class="nav-button" id="tasksButton">Tasks</button>
+    <button class="nav-button" id="rankingButton" onclick="window.location.href='ranking.html'">Ranking</button> <!-- Mantendo o botão Ranking -->
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

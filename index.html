@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Coin Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="total-coins">Total de Moedas: <span id="coinCount">0</span></h1>
+            <p>Ganho por Hora: <span id="coinsPerHour">100</span></p>
+            <p>Nível: <span id="level">1</span> | XP: <span id="xp">0</span> | Rank: <span id="rankTitle">Private</span></p>
+            <h2>XP para próximo nível: <span id="xp-next-level">1000</span></h2>
+            <h2>Energia: <span id="energy-amount">100</span></h2>
+            <div class="energy-bar">
+                <div id="energy-level"></div>
+            </div>
+        </header>
+
+        <div class="circle">
+            <img id="coin" src="img/soldado.jpg" alt="Soldado" onclick="clickCoin()">
+        </div>
+
+        <button id="reset-level" onclick="resetLevel()">Zerar Level para Teste</button>
+
+        <div class="bottom-bar">
+            <button class="nav-button" id="homeButton" onclick="window.location.href='index.html'">Home</button>
+            <button class="nav-button" id="upgradeButton" onclick="window.location.href='upgrade.html'">Upgrades</button>
+            <button class="nav-button" id="tasksButton" onclick="goToTasks()">Tasks</button>
+            <button class="nav-button" id="rankingButton" onclick="window.location.href='ranking.html'">Ranking</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
